@@ -12,9 +12,9 @@ describe TodosController do
 
   context 'POST #create' do
     it 'new task' do
-      post :create
-      let(:todo_params) {FactoryGirl.attributes_for(:todo)}
-      expect(Todo.create(todo_params)).to change(Todo.count).by(1)
+      expect{
+        post :create, todo: FactoryGirl.attributes_for(:todo)
+      }.to change{Todo.count}.by(1)
     end
   end
 end
