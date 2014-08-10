@@ -4,17 +4,17 @@ document.ready(function(){
   this.controller = new Controller(view, add)
 })
 
-//===VIEW===//
+// VIEW
 function View(){
-
+  // 
 }
 
-//===CONTROLLER===//
+// CONTROLLER
 function Controller(){
 
 }
 
-//===MODEL===//
-function Model(){
-  
+// MODEL
+function addTask(){
+
 }
