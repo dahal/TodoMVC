@@ -6,7 +6,7 @@ class TodosController < ApplicationController
 
   def create
     @todo = Todo.create(todo_params)
-    redirect_to '/'
+    render json: @todo.task.to_json
   end
 
   private
