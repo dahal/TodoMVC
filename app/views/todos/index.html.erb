@@ -1,7 +1,11 @@
 <h2>Tasks</h2>
 
+<%= render partial: 'form' %>
 <ul>
   <% @todos.each do |todo| %>
-    <li><i class="fa fa-check-square-o"> <%= todo.task %></i></li>
+    <li>
+      <i class="fa fa-circle-thin"></i>
+      <%= todo.task %>
+    </li>
   <% end %>
 </ul>
