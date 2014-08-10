@@ -19,4 +19,7 @@ group :development, :test do
   gem 'pry'
   gem 'guard-rspec'
   gem 'capybara'
+  gem 'factory_girl_rails'
+  gem 'faker'
+  gem 'shoulda-matchers'
 end
