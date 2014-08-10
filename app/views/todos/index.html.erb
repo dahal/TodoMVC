@@ -1,0 +1,7 @@
+<h2>Tasks</h2>
+
+<ul>
+  <% @todos.each do |todo| %>
+    <li><i class="fa fa-check-square-o"> <%= todo.task %></i></li>
+  <% end %>
+</ul>
